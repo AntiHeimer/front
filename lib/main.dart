@@ -1,8 +1,12 @@
+import 'package:anti_heimer/Account/page/account_page.dart';
+import 'package:anti_heimer/Home/page/home_page.dart';
+import 'package:anti_heimer/Location/page/location_page.dart';
+import 'package:anti_heimer/Main/component/bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
-  await dotenv.load(fileName: 'assets/config/.env');
+  // await dotenv.load(fileName: '../../.env');
   runApp(MyApp());
 }
 
@@ -30,16 +34,17 @@ class _MyAppState extends State<MyApp> {
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
               Container(
-                child: Text("hello"),
+                child: LocationPage(),
               ),
               Container(
-                child: Text("hello"),
+                child: HomePage(),
               ),
               Container(
-                child: Text("hello"),
+                child: AccountPage(),
               ),
             ],
           ),
+          bottomNavigationBar: BottomBar(),
         ),
       ),
     );
