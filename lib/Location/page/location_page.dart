@@ -1,4 +1,4 @@
-import 'package:anti_heimer/Main/component/app_bar.dart';
+import 'package:anti_heimer/Main/component/app_bar/app_bar1.dart';
 import 'package:flutter/material.dart';
 
 class LocationPage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _LocationPageState extends State<LocationPage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: AppBarWidget(title: '위치'),
+      appBar: AppBarWidget1(title: '위치'),
       body: Text('location'),
     );
   }

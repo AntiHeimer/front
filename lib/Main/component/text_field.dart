@@ -11,7 +11,7 @@ class TextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 308,
+      width: 320,
       height: 55,
       child: TextField(
         cursorColor: Colors.transparent,

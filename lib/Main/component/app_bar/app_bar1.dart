@@ -1,10 +1,10 @@
 import 'package:anti_heimer/Login/page/login_page.dart';
 import 'package:flutter/material.dart';
 
-class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
+class AppBarWidget1 extends StatelessWidget implements PreferredSizeWidget {
   final String title;
 
-  const AppBarWidget({
+  const AppBarWidget1({
     required this.title,
     Key? key,
   }) : super(key: key);

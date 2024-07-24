@@ -1,6 +1,7 @@
 import 'package:anti_heimer/Login/component/social_login.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:anti_heimer/Main/component/text_field.dart';
+import 'package:anti_heimer/SignUp/page/signup_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -36,7 +37,11 @@ class _LoaginPageState extends State<LoginPage> {
             const MainButton(text: '로그인'),
             const Padding(padding: EdgeInsets.only(bottom: 20)),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return SignUpPage();
+                }));
+              },
               child: const Text(
                 '회원가입',
                 style: TextStyle(
