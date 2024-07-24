@@ -2,10 +2,10 @@ import 'package:anti_heimer/Account/page/account_page.dart';
 import 'package:anti_heimer/Home/page/home_page.dart';
 import 'package:anti_heimer/Location/page/location_page.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
-  // await dotenv.load(fileName: 'assets/config/.env');
+  await dotenv.load(fileName: 'assets/config/.env');
   runApp(MyApp());
 }
 
