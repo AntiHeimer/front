@@ -2,6 +2,7 @@ import 'package:anti_heimer/Login/component/social_login.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:anti_heimer/Main/component/text_field.dart';
 import 'package:anti_heimer/SignUp/page/signup_page.dart';
+import 'package:anti_heimer/main.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -34,7 +35,14 @@ class _LoaginPageState extends State<LoginPage> {
             const Padding(padding: EdgeInsets.only(bottom: 14)),
             const TextFieldWidget(hintText: '비밀번호를 입력하세요'),
             const Padding(padding: EdgeInsets.only(bottom: 28)),
-            const MainButton(text: '로그인'),
+            MainButton(
+              text: '로그인',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return MyApp();
+                }));
+              },
+            ),
             const Padding(padding: EdgeInsets.only(bottom: 20)),
             InkWell(
               onTap: () {
