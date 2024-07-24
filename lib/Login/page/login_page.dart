@@ -1,4 +1,3 @@
-import 'package:anti_heimer/Home/page/home_page.dart';
 import 'package:anti_heimer/Login/component/social_login.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:anti_heimer/Main/component/text_field.dart';

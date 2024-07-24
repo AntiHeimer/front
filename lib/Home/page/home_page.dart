@@ -1,3 +1,4 @@
+import 'package:anti_heimer/Diagnosis/page/diagnosis_notification_page.dart';
 import 'package:anti_heimer/Main/component/app_bar/app_bar1.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:anti_heimer/SignUp/page/signup_page.dart';
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
               text: '진단하기',
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return SignUpPage();
+                  return DiagnosisNotificationPage();
                 }));
               },
             ),
