@@ -7,11 +7,13 @@ class BottomBar extends StatelessWidget {
       color: Color.fromRGBO(245, 245, 245, 100),
       child: const SizedBox(
         height: 104,
-        child: TabBar(tabs: <Widget>[
-          ButtonTextWidget(icon: Icons.location_on_outlined),
-          ButtonTextWidget(icon: Icons.home),
-          ButtonTextWidget(icon: Icons.account_circle_outlined),
-        ]),
+        child: TabBar(
+          tabs: <Widget>[
+            ButtonTextWidget(icon: Icons.location_on_outlined),
+            ButtonTextWidget(icon: Icons.home),
+            ButtonTextWidget(icon: Icons.account_circle_outlined),
+          ],
+        ),
       ),
     );
   }
