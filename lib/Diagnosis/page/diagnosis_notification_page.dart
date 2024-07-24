@@ -1,4 +1,5 @@
 import 'package:anti_heimer/Main/component/app_bar/app_bar3.dart';
+import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:flutter/material.dart';
 
 class DiagnosisNotificationPage extends StatefulWidget {
@@ -7,6 +8,7 @@ class DiagnosisNotificationPage extends StatefulWidget {
 }
 
 class _DiagnosisNotificationPageState extends State<DiagnosisNotificationPage> {
+  bool _isChecked = false;
   @override
   void initState() {
     super.initState();
@@ -22,7 +24,49 @@ class _DiagnosisNotificationPageState extends State<DiagnosisNotificationPage> {
           const Padding(
             padding: EdgeInsets.only(bottom: 30),
           ),
-          Text('diagnosis'),
+          const Text(
+            '안내 사항',
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+          ),
+          const Padding(padding: EdgeInsets.only(bottom: 30)),
+          SizedBox(
+            height: 350,
+            width: 300,
+            child: Container(color: Colors.black26),
+          ),
+          const Padding(padding: EdgeInsets.only(bottom: 90)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Transform.scale(
+                scale: 0.7,
+                child: Checkbox(
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  visualDensity: const VisualDensity(
+                    horizontal: VisualDensity.minimumDensity,
+                    vertical: VisualDensity.minimumDensity,
+                  ),
+                  value: _isChecked,
+                  onChanged: (value) {
+                    setState(() {
+                      _isChecked = value!;
+                    });
+                  },
+                  side: const BorderSide(color: Colors.black, width: 0.5),
+                  fillColor: const MaterialStatePropertyAll(Colors.white),
+                  checkColor: Colors.black,
+                ),
+              ),
+              const Padding(padding: EdgeInsets.only(left: 5)),
+              const Text(
+                '다시 보지 않기',
+                style: TextStyle(fontSize: 12),
+              ),
+              const Padding(padding: EdgeInsets.only(right: 60)),
+            ],
+          ),
+          const Padding(padding: EdgeInsets.only(bottom: 7)),
+          MainButton(text: '진단 시작', onPressed: () {})
         ],
       )),
     );
