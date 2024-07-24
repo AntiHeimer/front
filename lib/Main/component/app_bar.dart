@@ -1,3 +1,4 @@
+import 'package:anti_heimer/Login/page/login_page.dart';
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -17,6 +18,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       ),
       shape: const Border(
         bottom: BorderSide(color: Color.fromRGBO(213, 213, 213, 1), width: 1.2),
+      ),
+      leading: IconButton(
+        icon: const Icon(Icons.login),
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return LoginPage();
+          }));
+        },
       ),
       actions: <Widget>[
         Padding(
