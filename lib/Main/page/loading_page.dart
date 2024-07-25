@@ -5,10 +5,11 @@ class LoadingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-          child: Text(
-        "Loading...",
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-      )),
+        child: Text(
+          "Loading...",
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        ),
+      ),
     );
   }
 }
