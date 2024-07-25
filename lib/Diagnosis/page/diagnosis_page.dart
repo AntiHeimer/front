@@ -1,6 +1,7 @@
 import 'package:anti_heimer/Main/component/app_bar/app_bar3.dart';
 import 'package:anti_heimer/Main/component/main_button_small_black.dart';
 import 'package:anti_heimer/Main/component/main_button_small_gray.dart';
+import 'package:anti_heimer/Main/page/loading_page.dart';
 import 'package:flutter/material.dart';
 
 class DiagnosisPage extends StatefulWidget {
@@ -18,43 +19,51 @@ class _DiagnosisPageState extends State<DiagnosisPage> {
     return Scaffold(
       appBar: const AppBarWidget3(title: '진단하기'),
       body: Center(
-          child: Column(
-        children: <Widget>[
-          const Padding(padding: EdgeInsets.only(bottom: 50)),
-          QuestionBox(),
-          const Padding(padding: EdgeInsets.only(bottom: 20)),
-          AnswerBox(),
-          const Padding(padding: EdgeInsets.only(bottom: 30)),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              IconButton(
+        child: Column(
+          children: <Widget>[
+            const Padding(padding: EdgeInsets.only(bottom: 50)),
+            QuestionBox(),
+            const Padding(padding: EdgeInsets.only(bottom: 20)),
+            AnswerBox(),
+            const Padding(padding: EdgeInsets.only(bottom: 30)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.check_circle_outline_outlined,
+                      size: 40,
+                    )),
+                const Padding(padding: EdgeInsets.only(left: 135)),
+                IconButton(
                   onPressed: () {},
                   icon: const Icon(
                     Icons.check_circle_outline_outlined,
                     size: 40,
-                  )),
-              const Padding(padding: EdgeInsets.only(left: 135)),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.check_circle_outline_outlined,
-                  size: 40,
+                  ),
                 ),
-              ),
-            ],
-          ),
-          const Padding(padding: EdgeInsets.only(top: 30)),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              MainButtonSmallGray(text: '이전', onPressed: () {}),
-              const Padding(padding: EdgeInsets.only(left: 18)),
-              MainButtonSmallBlack(text: '다음', onPressed: () {}),
-            ],
-          ),
-        ],
-      )),
+              ],
+            ),
+            const Padding(padding: EdgeInsets.only(top: 30)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                MainButtonSmallGray(text: '이전', onPressed: () {}),
+                const Padding(padding: EdgeInsets.only(left: 18)),
+                MainButtonSmallBlack(
+                    text: '다음',
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return LoadingPage();
+                      }));
+                    }),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
