@@ -30,26 +30,26 @@ class _DiagnosisPageState extends State<DiagnosisPage> {
             children: <Widget>[
               IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.check_circle_outline_outlined,
                     size: 40,
                   )),
-              Padding(padding: EdgeInsets.only(left: 135)),
+              const Padding(padding: EdgeInsets.only(left: 135)),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.check_circle_outline_outlined,
                   size: 40,
                 ),
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.only(top: 30)),
+          const Padding(padding: EdgeInsets.only(top: 30)),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               MainButtonSmallGray(text: '이전', onPressed: () {}),
-              Padding(padding: EdgeInsets.only(left: 18)),
+              const Padding(padding: EdgeInsets.only(left: 18)),
               MainButtonSmallBlack(text: '다음', onPressed: () {}),
             ],
           ),
@@ -79,9 +79,12 @@ class QuestionBox extends StatelessWidget {
           width: 320,
           height: 200,
           decoration: BoxDecoration(border: Border.all(width: 0.2)),
-          child: const Text(
-            "문제내용",
-            textAlign: TextAlign.center,
+          child: const Center(
+            child: Text(
+              "문제내용",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 15),
+            ),
           ),
         ),
       ],
@@ -109,9 +112,12 @@ class AnswerBox extends StatelessWidget {
           width: 320,
           height: 60,
           decoration: BoxDecoration(border: Border.all(width: 0.2)),
-          child: const Text(
-            "정답 내용",
-            textAlign: TextAlign.center,
+          child: const Center(
+            child: Text(
+              "정답 내용",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 15),
+            ),
           ),
         ),
       ],
