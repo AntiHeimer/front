@@ -1,3 +1,4 @@
+import 'package:anti_heimer/Diagnosis/page/choice_page.dart';
 import 'package:anti_heimer/Main/component/app_bar/app_bar3.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ class DiagnosisNotificationPage extends StatefulWidget {
 
 class _DiagnosisNotificationPageState extends State<DiagnosisNotificationPage> {
   bool _isChecked = false;
+
   @override
   void initState() {
     super.initState();
@@ -26,9 +28,9 @@ class _DiagnosisNotificationPageState extends State<DiagnosisNotificationPage> {
           ),
           const Text(
             '안내 사항',
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
           ),
-          const Padding(padding: EdgeInsets.only(bottom: 30)),
+          const Padding(padding: EdgeInsets.only(bottom: 25)),
           SizedBox(
             height: 350,
             width: 300,
@@ -66,7 +68,13 @@ class _DiagnosisNotificationPageState extends State<DiagnosisNotificationPage> {
             ],
           ),
           const Padding(padding: EdgeInsets.only(bottom: 7)),
-          MainButton(text: '진단 시작', onPressed: () {})
+          MainButton(
+              text: '진단 시작',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ChoicePage();
+                }));
+              })
         ],
       )),
     );
