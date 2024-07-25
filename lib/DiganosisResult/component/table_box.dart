@@ -15,7 +15,7 @@ class TableBox extends StatelessWidget {
           TableRow(children: [
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '치매 단계',
                   style: TextStyle(fontWeight: FontWeight.w500),
@@ -25,7 +25,7 @@ class TableBox extends StatelessWidget {
             ),
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '설명',
                   style: TextStyle(fontWeight: FontWeight.w500),
@@ -37,7 +37,7 @@ class TableBox extends StatelessWidget {
           TableRow(children: [
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '1단계',
                   textAlign: TextAlign.center,
@@ -46,7 +46,7 @@ class TableBox extends StatelessWidget {
             ),
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '설명설명설명설명설명설명',
                   textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class TableBox extends StatelessWidget {
           TableRow(children: [
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '2단계',
                   textAlign: TextAlign.center,
@@ -66,7 +66,7 @@ class TableBox extends StatelessWidget {
             ),
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '설명설명설명설명설명설명',
                   textAlign: TextAlign.center,
@@ -77,7 +77,7 @@ class TableBox extends StatelessWidget {
           TableRow(children: [
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '3단계',
                   textAlign: TextAlign.center,
@@ -86,7 +86,7 @@ class TableBox extends StatelessWidget {
             ),
             TableCell(
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.fromLTRB(10, 15, 10, 15),
                 child: Text(
                   '설명설명설명설명설명설명',
                   textAlign: TextAlign.center,

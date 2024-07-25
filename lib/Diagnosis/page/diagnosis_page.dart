@@ -2,7 +2,6 @@ import 'package:anti_heimer/DiganosisResult/page/diagnosis_result_page.dart';
 import 'package:anti_heimer/Main/component/app_bar/app_bar3.dart';
 import 'package:anti_heimer/Main/component/main_button_small_black.dart';
 import 'package:anti_heimer/Main/component/main_button_small_gray.dart';
-import 'package:anti_heimer/Main/page/loading_page.dart';
 import 'package:flutter/material.dart';
 
 class DiagnosisPage extends StatefulWidget {
