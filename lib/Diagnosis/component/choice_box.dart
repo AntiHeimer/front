@@ -7,7 +7,7 @@ class ChoiceBox extends StatelessWidget {
         height: 100,
         width: 300,
         decoration: BoxDecoration(
-            border: Border.all(color: Colors.black, width: 0.2),
+            border: Border.all(color: Colors.black, width: 0.3),
             borderRadius: const BorderRadius.all(Radius.circular(5))),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
