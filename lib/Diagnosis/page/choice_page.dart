@@ -1,4 +1,5 @@
 import 'package:anti_heimer/Diagnosis/component/choice_box.dart';
+import 'package:anti_heimer/Diagnosis/page/diagnosis_page.dart';
 import 'package:anti_heimer/Main/component/app_bar/app_bar3.dart';
 import 'package:anti_heimer/Main/component/main_button.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +65,13 @@ class _ChoicePageState extends State<ChoicePage> {
                 }),
           ),
           const Padding(padding: EdgeInsets.only(bottom: 225)),
-          MainButton(text: '진단 시작', onPressed: () {})
+          MainButton(
+              text: '진단 시작',
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return DiagnosisPage();
+                }));
+              })
         ],
       )),
     );
